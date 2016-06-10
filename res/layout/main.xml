@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ebebeb">
+
+    <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/img" />
+
+    <RelativeLayout
+                android:layout_width="320dp"
+                android:layout_height="320dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="15dp" >
+        <Button
+                android:id="@+id/Camera"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/camera"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"/>
+        <Button
+                android:id="@+id/Album"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/album"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true" />
+        <Button
+                android:id="@+id/Bluetooth"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/bluetooth"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"/>
+        <Button
+                android:id="@+id/Repository"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:background="@drawable/repository"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"/>
+        <TextView
+                android:id="@+id/info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/Bluetooth"
+                android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

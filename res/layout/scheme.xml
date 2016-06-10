@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:weightSum="1"
+              android:background="#ebebeb">
+
+    <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="210dp"
+            android:id="@+id/image"
+            android:layout_gravity="top|center_horizontal"/>
+    <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@null"
+            android:id="@android:id/list"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1" />
+
+    <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="bottom|center_horizontal" >
+        <Button
+                android:id="@+id/ok"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="10dp"
+                android:background="@drawable/send"/>
+        <Button
+                android:id="@+id/iter"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/iterate"
+                android:layout_toRightOf="@id/ok"/>
+        <Button
+                android:id="@+id/no"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:background="@drawable/cancel"
+                android:layout_toRightOf="@id/iter"
+                android:layout_marginRight="10dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
